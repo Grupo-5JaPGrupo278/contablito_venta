@@ -7,39 +7,134 @@ html {
 }
 /* Generalidades*/
 body {
+    background-color: #7170FF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23575ce7' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#titleImg{
+    position: relative;
+    width: 80%;
+}
+.containerCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Diseños seccion principal */
 #main-section{
-    width: 400px;
+    top: 5vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
     height: 500px;
     font-size: 2rem;
     text-decoration: none;
     border: 1px solid black;
-    
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+.titleMenu{
+    color: #2a2a53;;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 2vh;
+    border-radius: 10px;
+}
+.anchrMenu{
+    text-decoration: none;
+        background-color: #9191fd;
+        border: 1px solid rgb(39, 39, 39);
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 2vh;
+        border-radius: 10px;
+}
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    height: fit-content;
+    padding: 2vh;
+}
+form input{
+    flex: 1;
+    width: auto;
+    right: 0;
+    margin-top: 1vh;
+    margin-left: 1vh;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media (max-width: 600px){
+    #main-section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 500px;
+        font-size: 2rem;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.61);
+    }
+    .anchrMenu{
+        text-decoration: none;
+        background-color: #9191fd;
+        border: 1px solid rgb(39, 39, 39);
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 2vh;
+        border-radius: 10px;
+    }
+    form {
+        height: 500px;
+        width: 90%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.61);
+        height: fit-content;
+        padding: 2vh;
+    }
 }
 .go-back {
+    position: relative;
+    display: flex;
+    text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
-    
+    color: rgb(78, 107, 233);
+    margin-bottom: 2vh;
+    width: 100%;
+    left: 0px;
+    padding: 2vh;
+    background: #ffffffb9;
 }
 
 h1 {
   text-align: center;
 }
-form {
-    min-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15vw;
-    text-align: left;
-    align-items: center;
-    justify-content: center;    
-    border: 1px solid black;
-    padding: 15px;
-}
+
 
 form label {
     font-size: 1.5rem;
@@ -54,7 +149,7 @@ form div{
     margin-left: auto;
     margin-right:auto;
     margin-top: 1vh;
-    width: 50%;
+    width: 80%;
     text-align: center;
     white-space: nowrap;/**/
 }
